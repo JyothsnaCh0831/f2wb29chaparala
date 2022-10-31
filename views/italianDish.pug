@@ -2,3 +2,8 @@ extends layout
 
 block content
     h1= title
+    - var results = [["Pizza", 4.99, "Dough"],["Aranchini", 5.76, "Rice"],["Lasagna", 3.45, "Noodles"]]
+    div.container-fluid 
+        div.row 
+            each item in results
+                div.col-sm-2 Dish: #{item[0]} <br> Price: #{item[1]} <br> Main Ingredient: #{item[2]}
