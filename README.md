@@ -6,3 +6,6 @@ To learn the syntax of pug.
 
 Pug is a view engine. We can add html, css and javascript in pug. <br>
 In pug, every line is indented.
+
+Class Name: ItalianDish <br>
+Attributes: dishName (string), dishPrice (number), mainIngredient (string)
