@@ -2,8 +2,8 @@ extends layout
 
 block content
     h1= title
-    - var results = [["Pizza", 4.99, "Dough"],["Aranchini", 5.76, "Rice"],["Lasagna", 3.45, "Noodles"]]
+    - var results = [{"dishName": "Pizza", "dishPrice": 4.99, "mainIngredient": "Dough"},{"dishName": "Aranchini", "dishPrice": 5.76, "mainIngredient": "Rice"},{"dishName": "Lasagna", "dishPrice": 3.45, "mainIngredient": "Noodles"}]
     div.container-fluid 
         div.row 
             each item in results
-                div.col-sm-2 Dish: #{item[0]} <br> Price: #{item[1]} <br> Main Ingredient: #{item[2]}
+                div.col-sm-2 Dish: #{item["dishName"]} <br> Price: #{item["dishPrice"]} <br> Main Ingredient: #{item["mainIngredient"]}
